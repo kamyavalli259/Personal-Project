@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <title>
+        Moon phases
+    </title>
+    
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+
+    
+    <h1 id="phase">Moon phases Calender</h1>
+    <p>
+  The Moon goes through 8 phases in its roughly 29.5-day cycle:<br><br>
+  <div id="moonSummary">
+
+    <strong id="1">New Moon (🌑):</strong> The Moon is invisible because its illuminated side faces the Sun and the dark side faces Earth. It rises and sets with the Sun and is up during the day.<br><br>
+
+    <strong>Waxing Crescent (🌒):</strong> A silver sliver visible as the Moon’s illuminated portion starts to grow. The Moon rises a little later each day.<br><br>
+
+    <strong>First Quarter (🌓):</strong> Half of the Moon’s illuminated side is visible. It rises around noon and is high in the evening sky.<br><br>
+
+    <strong>Waxing Gibbous (🌔):</strong> Most of the Moon’s day side is visible and brightening.<br><br>
+
+    <strong>Full Moon (🌕):</strong> The entire day side is visible, opposite the Sun. It rises at sunset and sets at sunrise.<br><br>
+
+    <strong>Waning Gibbous (🌖):</strong> The visible illuminated part shrinks as the Moon moves back toward the Sun.<br><br>
+
+    <strong>Last Quarter (🌗):</strong> Half of the illuminated side is visible again, but shrinking. It rises around midnight and sets at noon.<br><br>
+
+    <strong>Waning Crescent (🌘):</strong> A thin curve is visible before the Moon returns to New Moon phase.<br><br>
+  </div>
+
+  Click any day in the calendar to see the moon phase on that date!
+</p>
+
+
+
+    <label for="month">Month: </label>
+    <select id="month"></select>
+
+    <label for="year">Year: </label>
+    <input type="number" id="year" value="2025">
+
+    <button onclick="generateCalendar()">Generate Calendar</button>
+
+    <div class="calendar" id="calendar"></div>
+    <div id="moonPhaseResult">
+        <span id="moonIcon"></span>
+        <span id="moonText"></span>
+    </div>
+</div>
+
+    <script src="js/script.js"></script>
+
+
+
+
+</body>
+</html>

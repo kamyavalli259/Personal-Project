@@ -1,0 +1,114 @@
+body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+}
+.calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      max-width: 420px;
+      margin: 20px auto;
+}
+.container {
+  /*max-width: 700px;*/
+  margin: 40px auto;
+  padding: 25px 45px;
+  background: #fff;
+  border-radius: 12px;
+  /*box-shadow: 0 6px 15px rgba(0,0,0,0.1);*/
+  background-color: lightgrey;
+}
+
+#phase{
+    color:#1e40af
+}
+
+#moonSummary p {
+  transition: background-color 0.3s ease; /* smooth transition */
+  padding: 8px 12px;                      /* some padding for better effect */
+  border-radius: 6px;                     /* rounded corners */
+  cursor: pointer;                       /* shows it’s interactive */
+}
+
+#moonSummary p:hover {
+  background-color: #d0e7ff; /* light blue highlight color */
+}
+
+
+.day {
+      padding: 10px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+}
+.day:hover {
+      background-color: #e0f7fa;
+}
+.header {
+      font-weight: bold;
+      background-color: #ddd;
+      padding: 10px;
+}
+
+#moonSummary {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  background: #f0f8ff;          /* light blue background */
+  border: 2px solid #a0c4ff;   /* soft blue border */
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+#moonSummary strong {
+  color: #1e40af;  /* dark blue for phase names */
+  font-size: 18px;
+}
+
+
+label[for="month"] {
+  font-size: 24px;   /* bigger font size */
+  font-weight: bold; /* optional: make it bold */
+}
+
+label[for="year"] {
+  font-size: 24px;   /* bigger font size */
+  font-weight: bold; /* optional: make it bold */
+}
+
+
+#moonPhaseResult {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#moonIcon {
+  font-size: 80px;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Make the controls bigger */
+select, input[type="number"], button {
+  font-size: 20px;       /* Bigger text */
+  padding: 8px 12px;     /* More padding */
+  margin: 8px 5px;       /* Space around them */
+  border-radius: 5px;    /* Rounded corners */
+  border: 1.5px solid #888;
+}
+
+/* Optional: bigger button and hover effect */
+button {
+  cursor: pointer;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1976D2;
+}
