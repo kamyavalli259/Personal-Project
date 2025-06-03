@@ -12,6 +12,24 @@ monthNames.forEach((m, i) => {
   monthSelect.appendChild(opt);
 });
 
+const yearSelect = document.getElementById('year');
+
+function populateYears(start, end, selectedYear) {
+  for (let y = start; y <= end; y++) {
+    const option = document.createElement('option');
+    option.value = y;
+    option.textContent = y;
+    if (y === selectedYear) {
+      option.selected = true;
+    }
+    yearSelect.appendChild(option);
+  }
+}
+
+// Example: Populate years from 1900 to 2100, default selected 2025
+populateYears(1900, 2100, 2025);
+
+
 function generateCalendar() {
   const year = parseInt(document.getElementById('year').value);
   const month = parseInt(monthSelect.value);
